@@ -2,8 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" href="js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" href="js/scripts.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Films</title>
   </head>
@@ -13,78 +13,29 @@
     </div>
     <div class="form-wrap">
       <h2>Rank Your Films</h2>
-      <form>
-        <label for="movie-title">Enter Movie Title</label>
-        <input type="text" name="movie-title">
-        <label for="movie-score">Enter your Rotten Tomatoes Score (1-100%)</label>
-        <input type="number" name="movie-score">
+      <form class="form">
+        <label for="movie-date">Enter Movie Release Date:</label>
+        <input type="text" name="movie-date" id="date" value="">
+        <label for="movie-title">Enter Movie Title:</label>
+        <input type="text" name="movie-title" id="title" value="">
+        <label for="movie-score">Enter your Rotten Tomatoes Score (1-100%):</label>
+        <input type="number" name="movie-score" id="score" value="">
         <button type="submit" name="button">Submit</button>
       </form>
     </div>
-    <div class="wrap">
-      <div class="table-body">
-        <table>
-          <thead>
-            <tr>
-              <th id="ranking">Ranking</th>
-              <th>Movie Title</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr id="row1">
-              <td>1</td>
-              <td>Wonder Woman</td>
-              <td>88%</td>
-            </tr>
-            <tr id="row2">
-              <td>2</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr id="row3">
-              <td>3</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr id="row4">
-              <td>4</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr id="row5">
-              <td>5</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr id="row6">
-              <td>6</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr id="row7">
-              <td>7</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr id="row8">
-              <td>8</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr id="row9">
-              <td>9</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr id="row10">
-              <td>10</td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="table-body">
+      <table>
+        <thead>
+          <tr>
+            <th id="ranking">Release Date</th>
+            <th>Movie Title</th>
+            <th id="score-sort">Score</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+      </table>
     </div>
+
   </body>
 </html>

@@ -5,6 +5,10 @@ function Movie(date, title, score) {
 }
 var movies = [];
 
+function clearForms() {
+  $('input').val("");
+}
+
 $(document).ready(function() {
   $(".form").submit(function(event) {
     event.preventDefault();
@@ -16,6 +20,7 @@ $(document).ready(function() {
     $(".tbody").append("<tr>" + "<td>" + newMovie.date + "</td>" + "<td>" + newMovie.title + "</td>" + "<td>" + newMovie.score + "</td>" + "</tr>");
 
     movies.push(newMovie);
+    clearForms();
   });
 
   $("#score-sort").click(function() {
